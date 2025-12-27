@@ -1,0 +1,24 @@
+
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 1800
+      cookie:
+        http-only: true
+        name: JSESSIONID
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bookstore?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: bookstore_user  # 改成你的数据库用户名
+    password: 123456  # 改成你的数据库密码
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+
+# 删除 spring.security 配置
