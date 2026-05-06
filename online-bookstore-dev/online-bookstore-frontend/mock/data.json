@@ -1,0 +1,184 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "seller_id": 2,
+      "title": "JavaScript高级程序设计",
+      "author": "Nicholas C. Zakas",
+      "isbn": "978-7-115-54541-8",
+      "price": 129,
+      "stock_quantity": 100,
+      "cover_image": "https://img3.doubanio.com/view/subject/l/public/s33836754.jpg",
+      "description": "JavaScript经典教程，被誉为红宝书",
+      "category": "编程"
+    },
+    {
+      "id": 2,
+      "seller_id": 2,
+      "title": "Vue.js设计与实现",
+      "author": "霍春阳",
+      "isbn": "978-7-115-58314-4",
+      "price": 99,
+      "stock_quantity": 49,
+      "cover_image": "https://img2.doubanio.com/view/subject/l/public/s34188940.jpg",
+      "description": "深入理解Vue.js框架设计原理",
+      "category": "编程"
+    },
+    {
+      "id": 3,
+      "seller_id": 2,
+      "title": "深入理解计算机系统",
+      "author": "Randal E. Bryant",
+      "isbn": "978-7-111-54493-7",
+      "price": 139,
+      "stock_quantity": 30,
+      "cover_image": "https://img1.doubanio.com/view/subject/l/public/s29195878.jpg",
+      "description": "程序员必读经典，理解计算机底层原理",
+      "category": "计算机科学"
+    },
+    {
+      "id": 4,
+      "seller_id": 2,
+      "title": "活着",
+      "author": "余华",
+      "isbn": "978-7-5063-3674-6",
+      "price": 46,
+      "stock_quantity": 200,
+      "cover_image": "https://img2.doubanio.com/view/subject/l/public/s29053580.jpg",
+      "description": "余华代表作，讲述人生的苦难与温情",
+      "category": "文学"
+    },
+    {
+      "id": 5,
+      "seller_id": 2,
+      "title": "三体",
+      "author": "刘慈欣",
+      "isbn": "978-7-5366-9293-0",
+      "price": 68,
+      "stock_quantity": 150,
+      "cover_image": "https://img2.doubanio.com/view/subject/l/public/s28357056.jpg",
+      "description": "中国科幻巅峰之作，雨果奖获奖作品",
+      "category": "科幻"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "email": "admin@bookstore.com",
+      "balance": 99999,
+      "role": "ADMIN",
+      "create_time": "2024-01-01 00:00:00"
+    },
+    {
+      "id": 2,
+      "username": "merchant1",
+      "password": "merchant123",
+      "email": "merchant1@bookstore.com",
+      "balance": 99999,
+      "role": "MERCHANT",
+      "create_time": "2024-01-15 00:00:00"
+    },
+    {
+      "id": 3,
+      "username": "user1",
+      "password": "user123",
+      "email": "user1@bookstore.com",
+      "balance": 99900,
+      "role": "CUSTOMER",
+      "create_time": "2024-02-01 00:00:00"
+    },
+    {
+      "id": 1766509361064,
+      "username": "user2",
+      "password": "user123",
+      "email": "user2@bookstore.com",
+      "balance": 99999,
+      "role": "CUSTOMER",
+      "create_time": "2025-12-23 17:02:41"
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "id": 1,
+      "user_id": 3,
+      "total_price": 357,
+      "recipient_name": "张三",
+      "recipient_phone": "13800000003",
+      "shipping_address": "北京市北京市海淀区中关村大街1号",
+      "status": "SUCCESS",
+      "create_time": "2024-12-01 10:30:00"
+    },
+    {
+      "id": 2,
+      "user_id": 3,
+      "total_price": 139,
+      "recipient_name": "张三",
+      "recipient_phone": "13800000003",
+      "shipping_address": "北京市北京市海淀区中关村大街1号",
+      "status": "SUCCESS",
+      "create_time": "2024-12-15 14:20:00"
+    },
+    {
+      "id": 1766508130899,
+      "user_id": 3,
+      "total_price": 99,
+      "recipient_name": "张三",
+      "recipient_phone": "13800000003",
+      "shipping_address": "北京市北京市海淀区中关村大街1号",
+      "status": "SUCCESS",
+      "create_time": "2025-12-23 16:42:10"
+    }
+  ],
+  "order_items": [
+    {
+      "id": 1,
+      "order_id": 1,
+      "book_id": 1,
+      "quantity": 2,
+      "price_at_purchase": 129
+    },
+    {
+      "id": 2,
+      "order_id": 1,
+      "book_id": 2,
+      "quantity": 1,
+      "price_at_purchase": 99
+    },
+    {
+      "id": 3,
+      "order_id": 2,
+      "book_id": 3,
+      "quantity": 1,
+      "price_at_purchase": 139
+    },
+    {
+      "id": 1766508130901.096,
+      "order_id": 1766508130899,
+      "book_id": 2,
+      "quantity": 1,
+      "price_at_purchase": 99
+    }
+  ],
+  "addresses": [
+    {
+      "id": 1,
+      "user_id": 3,
+      "recipient_name": "张三",
+      "phone_number": "13800000003",
+      "address_detail": "北京市北京市海淀区中关村大街1号",
+      "create_time": "2024-01-01 00:00:00"
+    },
+    {
+      "id": 2,
+      "user_id": 3,
+      "recipient_name": "李四",
+      "phone_number": "13800000004",
+      "address_detail": "上海市上海市浦东新区陆家嘴金融中心88号",
+      "create_time": "2024-01-02 00:00:00"
+    }
+  ],
+  "book_ratings": []
+}
